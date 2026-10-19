@@ -1,0 +1,45 @@
+.top-nav{display:flex;align-items:center;gap:22px}.top-nav a{font-size:11px;color:#637269;font-weight:600;text-decoration:none}.top-nav a:hover,.top-nav a[aria-current="page"]{color:var(--green);text-decoration:underline;text-underline-offset:5px}
+.subpage{max-width:1200px;margin:0 auto;padding:48px 0 76px;min-height:calc(100vh - 148px)}.subpage-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:26px}.subpage-head .eyebrow{margin-bottom:8px}.subpage-head h1{font-size:44px}.subpage-head .lede{margin-top:12px;max-width:650px}.subpage-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 16px}.subpage-tools .search-box{max-width:500px}.subpage-tools .select-wrap{min-width:165px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:6px;background:var(--white)}.course-table,.analysis-table{border-collapse:collapse;width:100%;min-width:940px;text-align:left}.course-table th,.analysis-table th{position:sticky;top:0;background:#f3f3ed;color:#637269;text-transform:uppercase;letter-spacing:.08em;font-size:9px;font-weight:700;padding:12px 10px;border-bottom:1px solid var(--line);white-space:nowrap}.course-table td,.analysis-table td{padding:12px 10px;border-bottom:1px solid #eceee8;font-size:11px;vertical-align:top}.course-table tr:last-child td,.analysis-table tr:last-child td{border-bottom:0}.course-table tbody tr:hover,.analysis-table tbody tr:hover{background:#fbfbf7}.table-code{font-size:10px;letter-spacing:.07em;font-weight:700;color:#637269;white-space:nowrap}.table-title{font:500 15px/1.25 var(--serif);color:#24332b;min-width:205px}.table-small{font-size:10px;color:#758078;line-height:1.45;min-width:120px}.table-link{color:var(--green);font-weight:700;text-decoration:none;white-space:nowrap}.table-link:hover{text-decoration:underline}.analysis-intro{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;margin:20px 0 16px;border:1px solid #dfe5d7;border-left:3px solid #8ea776;border-radius:4px;background:#f7f8f2;color:#637269;font-size:11px;line-height:1.6}.analysis-intro strong{color:#344a3d}.analysis-table{min-width:1420px}.analysis-table th:first-child,.analysis-table td:first-child{position:sticky;left:0;background:var(--white);z-index:1}.analysis-table th:first-child{background:#f3f3ed;z-index:2}.analysis-table .course-cell{min-width:220px}.analysis-table .group-cell{font-size:9px;color:#8a938b;margin-top:4px}.analysis-table .weight-cell{text-align:center;font-variant-numeric:tabular-nums;min-width:62px}.analysis-table .weight-value{font-weight:700;color:#435c4c}.analysis-table .total-cell{text-align:center;font-weight:700}.analysis-table .breakdown-cell{min-width:335px;max-width:440px;line-height:1.55;color:#58665d}.analysis-table .note-cell{min-width:225px;max-width:300px;line-height:1.5;color:#875d34}.analysis-table .outline-cell{white-space:nowrap}.summary-strip{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 18px}.summary-item{border:1px solid var(--line);background:var(--white);border-radius:4px;padding:9px 12px;font-size:10px;color:#738077}.summary-item strong{color:var(--green);font:500 17px var(--serif);margin-right:5px}.viewer-shell{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#e9ebe6}.viewer-frame{display:block;width:100%;height:min(78vh,900px);min-height:540px;border:0;background:white}.viewer-message{background:var(--white);padding:34px;line-height:1.7;color:#637269}.viewer-message h2{font-size:25px;color:var(--ink)}.notice{font-size:10px;color:#8b7356;line-height:1.5;margin-top:10px}.subpage-back{font-size:11px;color:var(--green);font-weight:700;text-decoration:none;white-space:nowrap}.subpage-back:hover{text-decoration:underline}.status-tag{display:inline-block;background:#f4eee3;color:#8a633e;border-radius:99px;padding:4px 7px;font-size:9px;font-weight:700;white-space:nowrap}.empty-row{text-align:center;color:#7c877f;padding:28px!important}
+@media(max-width:1240px){.subpage{margin:0 5.5vw}}
+@media(max-width:760px){.top-nav{gap:12px}.top-nav a{font-size:10px}.subpage{padding:34px 0 55px;margin:0 20px}.subpage-head{align-items:flex-start;flex-direction:column}.subpage-head h1{font-size:36px}.subpage-head .lede{font-size:12px}.viewer-frame{height:72vh;min-height:430px}.analysis-intro{font-size:10px}.analysis-table th:first-child,.analysis-table td:first-child{position:static}}
+.filter-menu{position:relative;height:40px;min-width:190px;z-index:4}.filter-menu>summary{list-style:none;cursor:pointer;height:40px;display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid #e3e5df;border-radius:4px;background:var(--white);padding:0 12px;color:#394840;font:12px var(--sans);white-space:nowrap}.filter-menu>summary::-webkit-details-marker{display:none}.filter-menu[open]>summary{border-color:#9cad9e;border-radius:4px 4px 0 0}.menu-arrow{font-size:17px;color:#69766d}.filter-menu-panel{position:absolute;top:39px;left:0;min-width:240px;max-height:340px;overflow:auto;background:var(--white);border:1px solid #9cad9e;border-radius:0 4px 4px 4px;box-shadow:0 10px 25px #1b30201a;padding:10px;z-index:10}.component-menu .filter-menu-panel{min-width:260px}.filter-menu-heading{display:flex;align-items:center;justify-content:space-between;padding:2px 2px 8px;border-bottom:1px solid #eceee8;color:#394840;font-size:10px;font-weight:700}.filter-menu-heading button{border:0;background:transparent;color:var(--green);font:600 10px var(--sans);cursor:pointer}.filter-options{display:grid;gap:2px;padding-top:5px}.filter-option{display:flex;gap:8px;align-items:center;padding:7px 4px;color:#55645a;font-size:11px;cursor:pointer}.filter-option:hover{background:#f4f5ef}.filter-option input{accent-color:var(--green);margin:0}.filter-help{font-size:9px;color:#828b83;line-height:1.4;margin:8px 2px}.filter-menu-panel select{width:100%;height:32px;border:1px solid #e3e5df;border-radius:3px;background:#fffefa;padding:0 7px;color:#394840;font:10px var(--sans)}.presence-select{min-width:150px}.reset-filters{height:38px;padding:0 8px;border:0;background:transparent;color:#647369;font:600 10px var(--sans);cursor:pointer;white-space:nowrap}.reset-filters:hover{color:var(--green);text-decoration:underline}.analysis-filters{align-items:flex-start}.component-lines{min-width:300px;max-width:500px;color:#394840;line-height:1.55}.component-line{padding:1px 0}.instructor-cell{min-width:185px;max-width:270px;color:#59675e;line-height:1.5}.analysis-table{min-width:1120px}.analysis-table .course-cell{min-width:225px}
+@media(max-width:760px){.subpage-tools .search-box{flex-basis:100%;max-width:none}.filter-menu{flex:1;min-width:150px}.presence-select{flex:1;min-width:145px}.reset-filters{margin-left:auto}.analysis-table{min-width:1000px}}
+/* Narrow-screen refinements */
+@media(max-width:760px){
+  .topbar{gap:10px;padding-left:16px;padding-right:16px}
+  .brand{gap:8px;min-width:0}
+  .brand-name{font-size:11px;white-space:nowrap}
+  .brand-name small{font-size:9px}
+  .top-nav{gap:9px;flex-shrink:0}
+  .top-nav a{font-size:9px;white-space:nowrap}
+  .subpage{margin:0 16px;padding-top:28px}
+  .subpage-head{gap:14px}
+  .subpage-head h1{font-size:clamp(31px,8vw,38px);line-height:1.08}
+  .subpage-tools{gap:8px}
+  .subpage-tools .search-box{height:44px}
+  .filter-menu,.filter-menu>summary{height:44px}
+  .filter-menu-panel{position:fixed;top:auto;left:16px;right:16px;bottom:16px;width:auto;min-width:0;max-height:min(65vh,440px);border-radius:8px;box-shadow:0 14px 40px #1b302033}
+  .component-menu .filter-menu-panel{min-width:0}
+  .select-wrap{height:44px}
+  .reset-filters{height:44px}
+  .table-wrap{max-width:100%;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  .course-table,.analysis-table{font-size:12px}
+  .course-table th,.analysis-table th{padding:11px 9px}
+  .course-table td,.analysis-table td{padding:11px 9px}
+  .notice{font-size:10px}
+  footer{flex-wrap:wrap;justify-content:flex-start}
+}
+@media(max-width:390px){
+  .topbar{padding-left:12px;padding-right:12px}
+  .brand-mark{width:34px;height:34px;font-size:10px}
+  .brand-name{font-size:10px}
+  .brand-name small{font-size:8px}
+  .top-nav{gap:7px}
+  .top-nav a{font-size:8px}
+  .subpage{margin:0 12px}
+  .subpage-tools .filter-menu{min-width:calc(50% - 4px)}
+  .subpage-tools .select-wrap{min-width:calc(50% - 4px)}
+  .reset-filters{margin-left:0}
+  .results{margin-left:auto}
+  .viewer-frame{min-height:360px;height:68vh}
+}

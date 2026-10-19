@@ -1,0 +1,13 @@
+const courses=window.termSixCourses;
+const groups=[...new Set(courses.map(course=>course.group))];
+const groupMenu=document.querySelector("#home-groups"),groupOptions=document.querySelector("#home-group-options"),groupSummary=document.querySelector("#home-group-summary");
+const search=document.querySelector("#list-search"),credit=document.querySelector("#list-credit"),body=document.querySelector("#course-list-body"),count=document.querySelector("#list-count");
+function selectedGroups(){return [...groupOptions.querySelectorAll("input:checked")].map(input=>input.value)}
+for(const name of groups){const label=document.createElement("label");label.className="filter-option";label.innerHTML=`<input type="checkbox" value="${name}"><span>${name}</span>`;groupOptions.append(label)}
+function updateGroupSummary(){const selected=selectedGroups();groupSummary.textContent=selected.length?`${selected.length} group${selected.length===1?"":"s"} selected`:"All academic groups"}
+function render(){const q=search.value.trim().toLowerCase(),selected=selectedGroups();const rows=courses.filter(c=>(!q||`${c.code} ${c.title} ${c.group} ${c.instructors} ${c.tags?.join(" ")||""}`.toLowerCase().includes(q))&&(!selected.length||selected.includes(c.group))&&(!credit.value||String(c.credits)===credit.value));count.textContent=rows.length;body.replaceChildren(...rows.map(c=>{const tr=document.createElement("tr");tr.innerHTML=`<td class="table-code">${c.code}</td><td class="table-title">${c.title}</td><td class="table-small">${c.group}</td><td>${c.credits}</td><td>${c.cap||"—"}</td><td class="table-small">${c.instructors||"—"}</td><td class="table-small">${c.tags?.join(" · ")||"—"}</td><td>${c.outline?`<a class="table-link" target="_blank" rel="noopener" href="viewer.html?file=${encodeURIComponent(c.outline)}">View outline ↗</a>`:"—"}</td>`;return tr}));if(!rows.length){const tr=document.createElement("tr");tr.innerHTML='<td class="empty-row" colspan="8">No courses match these filters.</td>';body.append(tr)}}
+groupOptions.addEventListener("change",()=>{updateGroupSummary();render()});search.addEventListener("input",render);credit.addEventListener("change",render);
+document.querySelector('[data-clear="home-groups"]').addEventListener("click",()=>{groupOptions.querySelectorAll("input").forEach(input=>input.checked=false);updateGroupSummary();render()});
+document.querySelector("#home-reset").addEventListener("click",()=>{search.value="";credit.value="";groupOptions.querySelectorAll("input").forEach(input=>input.checked=false);updateGroupSummary();render()});
+document.addEventListener("click",event=>{if(!groupMenu.contains(event.target))groupMenu.open=false});
+render();
