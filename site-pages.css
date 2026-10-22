@@ -43,3 +43,15 @@
   .results{margin-left:auto}
   .viewer-frame{min-height:360px;height:68vh}
 }
+.batch-select{min-width:190px}
+.analysis-table{min-width:1950px}
+.analysis-table .course-cell{min-width:225px}
+.analysis-table .instructor-cell{min-width:180px;max-width:230px}
+.analysis-table .component-lines{min-width:290px;max-width:360px}
+.analysis-table .rating-cell{min-width:142px;max-width:155px;text-align:center;font-size:11px;font-weight:700;color:#435c4c;white-space:nowrap}
+.analysis-table .feedback-cell{min-width:280px;max-width:360px;line-height:1.55;color:#58665d;font-size:11px;white-space:normal}
+.feedback-point{padding:1px 0 7px;border-bottom:1px solid #edf0e9;margin-bottom:6px}
+.feedback-point:last-child{padding-bottom:0;border:0;margin-bottom:0}
+.feedback-empty{color:#919991;font-style:italic;font-size:10px}
+.analysis-table .note-cell{min-width:225px;max-width:300px}
+@media(max-width:760px){.batch-select{flex:1;min-width:150px}.analysis-table{min-width:1950px}}
