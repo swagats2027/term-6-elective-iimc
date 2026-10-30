@@ -13,11 +13,6 @@ window.courseFeedback = {
     "58th": {teachingTotal:33,teachingCount:8,easeTotal:33,easeCount:8,good:["The earlier course title, Sports, Entertainment and Media Marketing, received praise for examples, conversations, and an enjoyable format."],consider:["Several assignments can feel burdensome; a few responses mention repetition or lower scoring. This older-title match shares instructor C. D. Mitra."]}
   },
   "OM-248": {"61st": {teachingTotal:3,teachingCount:1,easeTotal:3,easeCount:1,good:["The respondent recommends it to students interested in operations."],consider:["Only one rating was recorded and no detailed course comment was provided."]}},
-  "MK-270": {
-    "61st": {teachingTotal:3,teachingCount:1,easeTotal:4,easeCount:1,good:["Feedback describes the market fieldwork as interesting and practical."],consider:["Field visits and group coordination require time and effort."]},
-    "59th": {teachingTotal:16,teachingCount:4,easeTotal:15,easeCount:4,good:["Students appreciate the instructor's passion and the real-world market exposure."],consider:["Some respondents question the learning value of the field visits; workload and scoring can depend on the group."]},
-    "58th": {teachingTotal:19,teachingCount:5,easeTotal:20,easeCount:5,good:["Students value the on-ground learning and describe the course as enjoyable and manageable."],consider:["Field visits take substantial time; scheduling and group contribution can affect the experience."]}
-  },
   "PP/EC-266": {
     "61st": {teachingTotal:6,teachingCount:2,easeTotal:8,easeCount:2,good:["Students find the geopolitics content interesting and the exam questions straightforward."],consider:["The syllabus can be broad; comments also mention overlapping content and participation expectations."]},
     "58th": {teachingTotal:16,teachingCount:4,easeTotal:7,easeCount:3,good:["Feedback praises the subject matter and effort invested by the instructors."],consider:["The syllabus is extensive and respondents find scoring more difficult."]}
